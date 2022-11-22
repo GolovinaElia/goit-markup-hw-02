@@ -4,20 +4,27 @@
   --title-theme-color: #212121;
   --description-color: #757575;
   --accent-color: #2196f3;
+  --dark-color: #2F303A;
+  --ligth-color: #ffffff;
 }
+
 body {
   font-family: var(--main-font);
   font-style: normal;
 }
+
 .list {
   list-style: none;
 }
+
 .link {
   text-decoration: none;
 }
+
 .address {
   font-style: normal;
 }
+
 /*========== COMPONENTS ==========*/
 .logo {
   font-family: var(--secondary-font);
@@ -27,9 +34,20 @@ body {
   letter-spacing: 0.03em;
   color: var(--title-theme-color);
 }
+
+.logo-footer {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+  color: var(--ligth-color);
+}
+
 .logo-item {
   color: var(--accent-color);
 }
+
 .title {
   font-weight: 700;
   font-size: 36px;
@@ -38,6 +56,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--title-theme-color);
 }
+
 /*========== END COMPONENTS ==========*/
 
 /*========== HEADER ==========*/
@@ -48,12 +67,18 @@ body {
   letter-spacing: 0.02em;
   color: var(--title-theme-color);
 }
+
+.navigation-list-link.active {
+  color: var(--accent-color);
+}
+
 .navigation-list-link:hover,
 .navigation-list-link:focus,
 .header-link:hover,
 .header-link:focus {
   color: var(--accent-color);
 }
+
 .header-link {
   font-weight: 500;
   font-size: 14px;
@@ -61,10 +86,15 @@ body {
   letter-spacing: 0.02em;
   color: var(--description-color);
 }
+
 /*========== END HEADER ==========*/
 
 /*========== MAIN ==========*/
 /*========== HERO ==========*/
+.hero {
+  background-color: var(--dark-color);
+}
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -72,8 +102,9 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--ligth-color);
 }
+
 .modal-btn {
   font-family: var(--main-font);
   font-style: normal;
@@ -85,8 +116,9 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   background-color: var(--accent-color);
-  color: #ffffff;
+  color: var(--ligth-color);
 }
+
 /*========== END HERO ==========*/
 
 /*========== PRINCIPLES ==========*/
@@ -98,6 +130,7 @@ body {
   text-transform: uppercase;
   color: var(--title-theme-color);
 }
+
 .principles-list-discription {
   font-weight: 400;
   font-size: 14px;
@@ -105,12 +138,21 @@ body {
   letter-spacing: 0.03em;
   color: var(--description-color);
 }
+
 /*========== END PRINCIPLES ==========*/
 
 /*========== SERVICES ==========*/
 /*========== END SERVICES ==========*/
 
 /*========== TEAM ==========*/
+.team {
+  background-color: #F5F4FA;
+}
+
+.team-list-item {
+  background-color: var(--ligth-color);
+}
+
 .team-list-name {
   font-weight: 500;
   font-size: 16px;
@@ -119,6 +161,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--title-theme-color);
 }
+
 .team-list-position {
   font-weight: 400;
   font-size: 16px;
@@ -127,17 +170,22 @@ body {
   letter-spacing: 0.03em;
   color: var(--description-color);
 }
+
 /*========== END TEAM ==========*/
 /*========== END MAIN ==========*/
-
 /*========== FOOTER ==========*/
+footer {
+  background-color: var(--dark-color);
+}
+
 .contact-list-address {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--ligth-color);
 }
+
 .contact-list-link {
   font-weight: 400;
   font-size: 14px;
@@ -145,6 +193,7 @@ body {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
+
 /*========== END FOOTER ==========*/
 
 /*========== PORTFOLIO ==========*/
@@ -157,18 +206,21 @@ body {
   letter-spacing: 0.03em;
   color: var(--title-theme-color);
 }
+
 .filter-list-title:hover,
 .filter-list-title:focus {
   background-color: var(--accent-color);
-  color: #ffffff;
+  color: var(--ligth-color);
 }
+
 .categories-list-name {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--title-theme-colo);
+  color: var(--title-theme-color);
 }
+
 .categories-list-position {
   font-weight: 400;
   font-size: 16px;
